@@ -54,9 +54,9 @@ export default function App() {
 
 // Data for the portfolio. You can easily edit this!
 const portfolioData = {
-  name: "AKinwoleola Clinton",
+  name: "Akinwoleola Clinton",
   role: "Full-Stack Developer",
-  bio: "Passionate about building scalable and accessible web applications. I specialize in the MERN stack and love creating beautiful and performant user interfaces.",
+  bio: "I am a passionate web developer dedicated to creating intuitive and visually compelling digital experiences. I approach every project with grit and dedication, committed to seeing challenges through to a polished conclusion. I am a lifelong learner, constantly exploring new technologies to expand my skills and deliver better results. I specialize in the MERN stack and love creating beautiful and performant user interfaces.",
   skills: [
     { name: 'React', level: 'Expert' },
     { name: 'JavaScript', level: 'Expert' },
@@ -84,6 +84,13 @@ const portfolioData = {
       description: 'A classic Tic-Tac-Toe game created with React to showcase state management and component-based architecture. Includes a win condition and turn-based logic.',
       techStack: ['React', 'JavaScript', 'CSS'],
       link: 'https://tic-tac-toe-8tg.pages.dev/',
+      github: 'https://github.com/Clinton6801/tic-tac-toe.git',
+    },
+    {
+      title: 'Movie Rating App',
+      description: 'This application is a dynamic movie rating platform that seamlessly integrates with a third-party API to provide users with up-to-date movie information. Users can browse a comprehensive list of films, view detailed descriptions, cast information, and see real-time ratings.',
+      techStack: ['React', 'JavaScript', 'CSS'],
+      link: 'https://moviess-rcu.pages.dev/',
       github: 'https://github.com/Clinton6801/tic-tac-toe.git',
     },
   ],
@@ -184,7 +191,7 @@ function AboutSection() {
     <section id="about" className="text-center py-12 md:py-24">
       <div className="flex flex-col items-center">
         <img
-          src="https://placehold.co/192x192/4338ca/ffffff?text=Your+Photo"
+          src="./clinton.jpg"
           alt="Your profile picture"
           className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mb-6 shadow-2xl border-4 border-indigo-500"
         />
