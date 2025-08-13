@@ -56,6 +56,7 @@ export default function App() {
 const portfolioData = {
   name: "Akinwoleola Clinton",
   role: "Full-Stack Developer",
+  experience: "2 Years of Experience", // Added years of experience
   bio: "I am a passionate web developer dedicated to creating intuitive and visually compelling digital experiences. I approach every project with grit and dedication, committed to seeing challenges through to a polished conclusion. I am a lifelong learner, constantly exploring new technologies to expand my skills and deliver better results. I specialize in the MERN stack and love creating beautiful and performant user interfaces.",
   skills: [
     { name: 'React', level: 'Expert' },
@@ -100,6 +101,7 @@ const portfolioData = {
     linkedin: 'https://linkedin.com/in/akinwoleolaclinton',
     github: 'https://github.com/Clinton6801',
     location: 'Lagos, Nigeria',
+    resume: 'https://docs.google.com/document/d/1234567890/edit?usp=sharing' // Placeholder resume link
   }
 };
 
@@ -196,7 +198,8 @@ function AboutSection() {
           className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mb-6 shadow-2xl border-4 border-indigo-500"
         />
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-2">{portfolioData.name}</h2>
-        <p className="text-xl md:text-2xl text-indigo-400 font-semibold mb-4">{portfolioData.role}</p>
+        <p className="text-xl md:text-2xl text-indigo-400 font-semibold mb-1">{portfolioData.role}</p>
+        <p className="text-lg font-medium text-slate-300 mb-4">{portfolioData.experience}</p> {/* Added years of experience */}
         <p className="text-md md:text-lg max-w-2xl text-slate-300 leading-relaxed">{portfolioData.bio}</p>
       </div>
     </section>
@@ -265,23 +268,27 @@ function ContactSection() {
         <p className="text-slate-300 text-lg mb-6">I'm currently open to new opportunities. Feel free to reach out!</p>
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
           <a href={`mailto:${portfolioData.contact.email}`} className="flex items-center gap-2 text-indigo-400 font-medium hover:text-indigo-300 transition-colors">
-             <img src="./gmail.png" alt="Gmail Logo" className="w-6 h-6" /> {portfolioData.contact.email}
+              <img src="./gmail.png" alt="Gmail Logo" className="w-6 h-6" /> {portfolioData.contact.email}
           </a>
           <a href={`tel:${portfolioData.contact.phone}`} className="flex items-center gap-2 text-indigo-400 font-medium hover:text-indigo-300 transition-colors">
-            📞 {portfolioData.contact.phone}
+            <img src="./calll.png" alt="Calll Logo" className="w-6 h-6" /> {portfolioData.contact.phone}
           </a>
           <span className="flex items-center gap-2 text-slate-400">
-            <img src="./location.png" alt="LOcation Logo" className="w-6 h-6" /> {portfolioData.contact.location}
+            <img src="./location.png" alt="Location Logo" className="w-6 h-6" /> {portfolioData.contact.location}
           </span>
         </div>
-        <div className="flex justify-center gap-6">
-          {/* Aligned GitHub Icon */}
-          <a href={portfolioData.contact.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-2xl flex items-center justify-center">
-            <img src="./github-logo-icon.png" alt="GitHub Logo" className="w-6 h-6" />
+        <div className="flex justify-center gap-4 flex-wrap">
+          {/* Resume link with text label and styling */}
+          <a href={portfolioData.contact.resume} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-100 bg-slate-700 hover:bg-indigo-600 transition-colors duration-200 px-4 py-2 rounded-full shadow-md">
+            📄 Resume
           </a>
-          {/* Aligned LinkedIn Icon */}
-          <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-2xl flex items-center justify-center">
-           <img src="./linkedln.png" alt="linkedln Logo" className="w-6 h-6" />
+          {/* GitHub link with text label and styling */}
+          <a href={portfolioData.contact.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-100 bg-slate-700 hover:bg-indigo-600 transition-colors duration-200 px-4 py-2 rounded-full shadow-md">
+            <img src="./github-logo-icon.png" alt="GitHub Logo" className="w-6 h-6" /> GitHub
+          </a>
+          {/* LinkedIn link with text label and styling */}
+          <a href={portfolioData.contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-100 bg-slate-700 hover:bg-indigo-600 transition-colors duration-200 px-4 py-2 rounded-full shadow-md">
+            <img src="./linkedln.png" alt="LinkedIn Logo" className="w-6 h-6" /> LinkedIn
           </a>
         </div>
       </div>
