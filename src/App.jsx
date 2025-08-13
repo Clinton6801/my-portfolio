@@ -32,6 +32,14 @@ export default function App() {
   // The main layout of the application
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans antialiased flex flex-col items-center">
+          <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+          .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+          }
+        `}
+      </style>
       {/* Header component containing both desktop and mobile navigation */}
       <Header navigate={navigate} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       
@@ -121,7 +129,10 @@ function Header({ navigate, isMenuOpen, setIsMenuOpen }) {
       <nav className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo/Name */}
         <h1 className="text-2xl font-bold text-indigo-400">
-          <button onClick={() => navigate('home')}>Clinton's Portfolio</button>
+          <button onClick={() => navigate('home')}>
+            {/* The image tag to be replaced */}
+            <img src="./clintlogo.png" alt="Clinton's Logo" className="h-10 w-auto" />
+          </button>
         </h1>
         
         {/* Mobile Menu Button - shows on small screens */}
