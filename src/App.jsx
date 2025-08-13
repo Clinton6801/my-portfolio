@@ -101,7 +101,7 @@ const portfolioData = {
     linkedin: 'https://linkedin.com/in/akinwoleolaclinton',
     github: 'https://github.com/Clinton6801',
     location: 'Lagos, Nigeria',
-    resume: 'https://docs.google.com/document/d/1234567890/edit?usp=sharing' // Placeholder resume link
+    resume: 'https://drive.google.com/file/d/1YnTHABeC4Zdt_lyOVHo92jq39xnRj8TF/view?usp=drive_link' // Placeholder resume link
   }
 };
 
